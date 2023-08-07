@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bp" prefHeight="303.0" prefWidth="647.0" styleClass="column-header"  stylesheets="@JobOffers.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.JobOffersController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="JobsTable" prefHeight="527.0" prefWidth="1171.0" styleClass="d" onMouseClicked="#handleMouseEvent" stylesheets="@JobOffers.css">
+               <columns>
+                  <TableColumn fx:id="tcRef" prefWidth="72.0" text="Id" />
+                  <TableColumn fx:id="tcCompany" prefWidth="100.0" text="First  name" />
+                  <TableColumn fx:id="tcField" prefWidth="105.0" text="Last name" />
+                  <TableColumn fx:id="tcTitle" prefWidth="105.0" text="Title" />
+                  <TableColumn fx:id="tcDescription" prefWidth="115.0" text="Date" />
+                  <TableColumn fx:id="tcStartDate" prefWidth="188.0" text="Description" />
+                  <TableColumn fx:id="tcAgreementType" prefWidth="167.0" text="Answer" />
+                  <TableColumn fx:id="tcPosition" prefWidth="87.0" text="Status" />
+                  <TableColumn fx:id="tcStatus" prefWidth="87.0" text="Status" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

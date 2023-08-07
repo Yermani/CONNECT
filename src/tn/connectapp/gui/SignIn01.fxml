@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="carre" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.SignInController">
+   <children>
+      <Rectangle fx:id="Rect1" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="746.0" layoutX="137.0" layoutY="22.0" opacity="0.05" smooth="false" stroke="BLACK" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="906.0" />
+      <Rectangle fx:id="FormLog" arcHeight="5.0" arcWidth="5.0" height="478.0" layoutX="177.0" layoutY="159.0" opacity="0.51" stroke="WHITE" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="668.0">
+         <fill>
+            <LinearGradient endX="0.42857142857142855" endY="0.48571428571428577" startX="0.6904761904761905" startY="0.5428571428571429">
+               <stops>
+                  <Stop color="#00000030" />
+                  <Stop color="#fffcfc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="background" fitHeight="1086.0" fitWidth="1972.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/Homepage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tfLogo" fitHeight="123.0" fitWidth="440.0" layoutX="1506.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/BluesGreyGradient.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="AP1" layoutX="80.0" layoutY="14.0" prefHeight="788.0" prefWidth="944.0" />
+      <Pane fx:id="pane2" focusTraversable="true" layoutX="674.0" layoutY="259.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="570.0" style="-fx-background-color: white;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="512.0" layoutX="-4.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="579.0">
+               <fill>
+                  <LinearGradient endX="0.40476190476190477" endY="0.5095238095238095" startX="0.8" startY="0.5904761904761905">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color opacity="0.1899999976158142" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color opacity="0.1899999976158142" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Text fx:id="titleLogIn" fill="#282954" layoutX="52.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log inKeep abreast of developments in your professional world" wrappingWidth="399.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TFEmail" layoutX="52.0" layoutY="141.0" prefHeight="53.0" prefWidth="454.0" promptText="E-mail/ User Name">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+            <Hyperlink fx:id="hlForgotPassword" layoutX="358.0" layoutY="274.0" onAction="#HLForgotPW" text="Forgot your password ?">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="btnLog" layoutX="53.0" layoutY="338.0" mnemonicParsing="false" onAction="#ButtonLogIn" prefHeight="46.0" prefWidth="461.0" stylesheets="@application.css" text="LogIn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="tfPassword" layoutX="52.0" layoutY="218.0" prefHeight="53.0" prefWidth="454.0" promptText="Your Password">
+               <font>
+                  <Font size="16.0" />
+               </font></PasswordField>
+            <Button fx:id="btnReset" layoutX="53.0" layoutY="399.0" mnemonicParsing="false" onAction="#ResetForm" prefHeight="46.0" prefWidth="461.0" stylesheets="@application.css" text="Reset" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="btnFermer" fitHeight="25.0" fitWidth="24.0" layoutX="532.0" layoutY="14.0" onMouseClicked="#ActionFermer" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 70%;">
+               <image>
+                  <Image url="@../media/1200px-Grey_close_x.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets right="20.0" top="20.0" />
+         </padding>
+      </Pane>
+   </children>
+</AnchorPane>

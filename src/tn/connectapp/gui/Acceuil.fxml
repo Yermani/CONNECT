@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-radius: 20;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.AcceuilController">
+   <children>
+      <VBox layoutX="0.0" prefHeight="1080.0" prefWidth="130.0" style="-fx-background-color: #051232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="profilebtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#goToProfile" prefHeight="237.0" prefWidth="130.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="Profile" textFill="#a868a0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../media/979DB1User.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickHome" prefHeight="75.0" prefWidth="133.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="Home" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/cat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRemboursement" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clickEvents" prefHeight="83.0" prefWidth="185.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="Events" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/time.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onAction="#goToClub" prefHeight="80.0" prefWidth="134.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="Club" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="82.0" prefWidth="142.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="offer" textFill="#a868a0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #051232;">
+                     <image>
+                        <Image url="@../resources/group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="10.0" layoutY="76.0" mnemonicParsing="false" onAction="#clickAddRemboursement" prefHeight="86.0" prefWidth="140.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="Refund" textFill="#a868a0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/flag.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="claimsBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#goToClaims" prefHeight="80.0" prefWidth="140.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="Claims" textFill="#a868a0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/flag.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#clickAddRemboursement" prefHeight="80.0" prefWidth="140.0" style="-fx-background-color: #051232;" styleClass="button3" stylesheets="@application.css" text="Settings" textFill="#a868a0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/flag.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="content1" layoutX="130.0" layoutY="0.0" prefHeight="1080.0" prefWidth="1790.0" style="-fx-background-color: White;" stylesheets="@../css/fullpackstyling.css" />
+      <AnchorPane fx:id="content" layoutX="130.0" layoutY="0.0" prefHeight="1080.0" prefWidth="1790.0" style="-fx-background-color: White;" stylesheets="@../css/fullpackstyling.css" />
+   </children>
+</AnchorPane>
